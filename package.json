@@ -1,0 +1,19 @@
+{
+  "name": "vuepress-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:BlueBeastMight/vuepress-demo.git",
+  "author": "bluemight <969467050@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.9.9"
+  },
+  "scripts": {
+    "docs:dev": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs --temp .temp",
+    "docs:build": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs",
+    "deploy":"bash deploy.sh"
+  },
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
+}
